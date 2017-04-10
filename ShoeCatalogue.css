@@ -1,0 +1,26 @@
+.Container{
+  background-image: url("background.jpg");
+  height: 1000px;
+
+}
+.myheading{
+  color: White;
+  background-color: red;
+  font-size: 50px;
+  text-align: center;
+}
+
+#Allselections{
+
+  display: inline-table;
+}
+
+img{
+   width:200px;
+   height:200px;
+}
+
+
+#myTamplate{
+  display: inline;
+}
