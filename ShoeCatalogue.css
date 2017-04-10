@@ -1,6 +1,6 @@
 .Container{
   background-image: url("background.jpg");
-  height: 1000px;
+  height: 700px;
 
 }
 .myheading{
@@ -16,11 +16,10 @@
 }
 
 img{
-   width:200px;
-   height:200px;
+  border-radius: 8px;
+   width:350px;
+   height:250px;
 }
-
-
-#myTamplate{
-  display: inline;
+#display{
+  text-align: center;
 }
