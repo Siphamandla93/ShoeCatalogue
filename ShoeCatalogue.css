@@ -1,6 +1,6 @@
 .Container{
   background-image: url("background.jpg");
-  height: 600px;
+  height: 1000px;
 
 }
 .myheading{
@@ -20,8 +20,9 @@ img{
    width:400px;
    height:250px;
 }
-#display{
-  color: #a20808;
+.shoe {
+  display: inline-block;
+  font-size: 20px;
 }
 
 #Izihlangu{
@@ -32,7 +33,7 @@ img{
   background-color:Yellow;
 }
 
-#Wear{
+#wear{
   font-size: 20px;
     width: 150px;
       height:30px;

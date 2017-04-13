@@ -22,7 +22,7 @@
 
             <select id="Izihlangu">
          <label>Mans</label>
-          <option value="SelectShoes">SelectShoes</option>
+          <option value="SelectShoes">Mans Shoes</option>
           <option value="allShoes">allShoes</option>
           <option value="Brown">Brown</option>
           <option value="Red">Red</option>
@@ -33,53 +33,37 @@
 
 
 
-            <select id="Wear">
+            <select id="wear">
           <label>Size</label>
             <option value="Size">Size</option>
-            <option value="Brown">7</option>
-            <option value="Purple">6,5</option>
-            <option value="Black">5</option>
-            <option value="Naive">4</option>
+            <option value="7">7</option>
+            <option value="7">6,5</option>
+            <option value="7">5</option>
+            <option value="4">4</option>
+            <option value="9">9</option>
           </Select>
 
 
-            <button  id="clickSearch" >Search</button>
+            <button id="clickSearch">Search</button>
 
+            <button type="ADD REG" id="ADDREG" value="ADD REG">ADD</button>
+        </div>
 
-            <select id="ladyShoe">
-          <label>Ladies</label>
-         <option value="Ladies">Ladies</option>
-         <option value="Brown">Brown</option>
-         <option value="Red">Red</option>
-         <option value="Black">Black</option>
-         <option value="Naive">Naive</option>
-         </Select>
-
-            <select id="othersize">
-         <label>All Sizes</label>
-                 <option value="Size">Size</option>
-                 <option value="Brown">7</option>
-                 <option value="Purple">6,5</option>
-                 <option value="Black">5</option>
-                 <option value="Naive">4</option>
-                 <option value="Blue">3</option>
-               </Select>
-
-               <button type="ADD REG" id="ADDREG" value="ADD REG">ADD</button>
-       </div>
-
-     <div id="display">
-     </div>
+        <div id="display">
+        </div>
 
     </div>
     <script id="myTamplate" type="text/x-handlebars-some-template">
         {{#each shoes}}
-        <img src="{{image}}">
-        <li>Price:  {{price}}</li>
-        <li>Color: {{color}}</li>
-        <li>In-stock: {{in_stock}}</li>
+        <div class="shoe">
+          <img src="{{image}}">
+          <p>Price: {{price}}</p>
+          <p>Color: {{color}}</p>
+          <p>In-stock: {{in_stock}}</p>
+          <p>Size: {{Size}}</p>
+        </div>
         {{/each}}
-      </script>
+    </script>
     <script src="handlebars-v4.0.5.js" charset="utf-8"></script>
     <script src="ShoeCatalogue.js" charset="utf-8"></script>
 </body>
