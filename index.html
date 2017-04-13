@@ -23,10 +23,12 @@
             <select id="Izihlangu">
          <label>Mans</label>
           <option value="SelectShoes">SelectShoes</option>
+          <option value="allShoes">allShoes</option>
           <option value="Brown">Brown</option>
           <option value="Red">Red</option>
           <option value="white">white</option>
           <option value="maroon">maroon</option>
+          <option value="Blue">Blue</option>
           </Select>
 
 
@@ -63,9 +65,8 @@
                  <option value="Blue">3</option>
                </Select>
 
-            <button type="button" value="Search">Search</button>
-
-        </div>
+               <button type="ADD REG" id="ADDREG" value="ADD REG">ADD</button>
+       </div>
 
      <div id="display">
      </div>
@@ -74,9 +75,9 @@
     <script id="myTamplate" type="text/x-handlebars-some-template">
         {{#each shoes}}
         <img src="{{image}}">
-        <p>Price:  {{price}}</p>
-        <p>color: {{color}}</p>
-        <p>in_stock: {{in_stock}}</p>
+        <li>Price:  {{price}}</li>
+        <li>Color: {{color}}</li>
+        <li>In-stock: {{in_stock}}</li>
         {{/each}}
       </script>
     <script src="handlebars-v4.0.5.js" charset="utf-8"></script>

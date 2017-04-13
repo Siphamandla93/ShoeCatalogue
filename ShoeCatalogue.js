@@ -15,6 +15,7 @@ var shoes = [
     {Snaekers  : 'runningShoe', price : 1500, color : 'white', in_stock : 7, image : 'nike.jpg'},
     {Stars  : 'allstarTakkie', price : 1400, color: 'Red', in_stock : 4, image : "allstar.jpg"},
     {themazon  : 'workShoe', price : 500, color: 'maroon', in_stock : 3, image : 'amazon.jpg'},
+    {themazon  : 'all', price : 400, color: 'Blue', in_stock : 4, image : 'picback.jpg'},
   ];
 var display = myTampleInfor({shoes});
 //myDisplay.innerHTML = display;
@@ -26,6 +27,7 @@ var outPut = function searchShoes(){
     if ( thisone.value === shoes[i].color){
       filteredList.push(shoes);
     }
+
   }
 
   //Now use this with my template:
@@ -42,7 +44,11 @@ took.addEventListener("click", function(){
     if ( thisone.value === shoes[i].color){
       filteredList.push(shoes[i]);
     }
+    else if (thisone.value === "allShoes"){
+        filteredList.push(shoes[i]);
+    }
   }
+
 
   //Now use this with my template:
   var filteredShoesHTML = myTampleInfor({ shoes : filteredList});

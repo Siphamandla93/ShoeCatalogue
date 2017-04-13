@@ -11,15 +11,62 @@
 }
 
 #Allselections{
-
-  display: inline-table;
+display: inline-table;
 }
 
 img{
+  background-color:Yellow;
   border-radius: 8px;
    width:400px;
    height:250px;
 }
 #display{
-  text-align: center;
+  color: #a20808;
 }
+
+#Izihlangu{
+  font-size: 20px;
+  width: 150px;
+  height:30px;
+  border-radius: 8px;
+  background-color:Yellow;
+}
+
+#Wear{
+  font-size: 20px;
+    width: 150px;
+      height:30px;
+      border-radius: 8px;
+      background-color:Yellow;
+}
+
+#clickSearch{
+  font-size: 20px;
+  width: 150px;
+    height:30px;
+    border-radius: 8px;
+    background-color:Yellow;
+}
+
+#ladyShoe{
+  font-size: 20px;
+  width: 150px;
+    height:30px;
+    border-radius: 8px;
+    background-color:Yellow;
+}
+
+#othersize{
+  font-size: 20px;
+  width: 150px;
+    height:30px;
+    border-radius: 8px;
+    background-color:Yellow;
+}
+
+#ADDREG{
+  font-size: 20px;
+  width: 150px;
+    height:30px;
+    border-radius: 8px;
+    background-color:Yellow;}
