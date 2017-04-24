@@ -20,41 +20,46 @@
 
         <div class="Allselections">
 
-            <select id="Izihlangu">
-         <label>Mans</label>
-          <option value="SelectShoes">Mans Shoes</option>
-          <option value="allShoes">allShoes</option>
-          <option value="Brown">Brown</option>
-          <option value="Red">Red</option>
-          <option value="white">white</option>
-          <option value="maroon">maroon</option>
-          <option value="Blue">Blue</option>
-          </Select>
+  <Select id="Izihlangu">
+          <script id="SelectShoes" type="text/x-handlebars-some-template">
+            {{#each shoes}}
+            <option value="{{color}}">{{color}}</option>
+            {{/each}}
+            <option value="allShoes">allShoes</option>
+    </script>
+  </Select>
 
 
-
-            <select id="wear">
-          <label>Size</label>
-            <option value="Size">Size</option>
-            <option value="7">7</option>
-            <option value="7">6,5</option>
-            <option value="7">5</option>
-            <option value="4">4</option>
-            <option value="9">9</option>
-          </Select>
+  <Select id="wear">
+          <script id="Selectsize" type="text/x-handlebars-some-template">
+        {{#each shoes}}
+       <option value="{{Size}}">{{Size}}</option>
+       {{/each}}
+    </script>
+  </Select>
 
 
             <button id="clickSearch">Search</button>
+            <button type="Add button" id="ADDREG" value="ADD REG">ADD</button>
 
-            <button type="ADD REG" id="ADDREG" value="ADD REG">ADD</button>
+            <div id="buttons">
+            <input type="text" id="Txtcolor" placeholder="Enter Color">
+            <input type="text" id="Txtsize" placeholder="Enter Size">
+            <input type="text" id="Txtin-stock" placeholder="Enter Stock">
+            <input type="text" id="Txtprice" placeholder="Enter Price">
+          </div>
         </div>
 
         <div id="display">
         </div>
 
+        <br>
+        <br>
+
     </div>
     <script id="myTamplate" type="text/x-handlebars-some-template">
         {{#each shoes}}
+
         <div class="shoe">
           <img src="{{image}}">
           <p>Price: {{price}}</p>

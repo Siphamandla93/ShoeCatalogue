@@ -5,10 +5,12 @@ var thisone =  document.getElementById('Izihlangu');
 var othersWear= document.getElementById('wear');
 var ladyWear= document.getElementById('ladyshoe');
 var took= document.getElementById('clickSearch');
+var dropdown= document.getElementById('SelectShoes');
+var Sizedropdown= document.getElementById('Selectsize');
 
 
 
-//I am referencing my compiler which is my tamplate
+//Compiling my tamplate
 var myTampleInfor = Handlebars.compile(tamplate.innerHTML);
 var shoes = [
     {formal : 'formalShoe', price : 900, Size : 7, color : 'Brown', in_stock : 5, image : 'formal.jpg'},
@@ -17,8 +19,24 @@ var shoes = [
     {themazon  : 'workShoe', price : 500, Size : 6.5, color: 'maroon', in_stock : 3, image : 'amazon.jpg'},
     {themazon  : 'all', price : 400, Size : 9,color: 'Blue', in_stock : 4, image : 'picback.jpg'},
   ];
+
+  //compiling color dropdown
+  var colors = Handlebars.compile(dropdown.innerHTML);
+  //for (var i = 0; i < shoes.length; i++) {
+    // console.log(shoes[i].color);
+    thisone.innerHTML = colors({shoes: shoes});
+  //}
+
+  //compiling size dropdown
+  var thisSize = Handlebars.compile(Sizedropdown.innerHTML);
+  for (var i = 0; i < shoes.length; i++) {
+    othersWear.innerHTML = thisSize({shoes: shoes});
+  }
+
+
+  //myDisplay.innerHTML = display;
+
 var display = myTampleInfor({shoes});
-//myDisplay.innerHTML = display;
 
 var outPut = function searchShoes(){
   var filteredList = [];
