@@ -1,5 +1,5 @@
 .Container{
-  background-image: url("background.jpg");
+  background-image: url("thisonebackground.png");
   height: 1000px;
 
 }
@@ -23,7 +23,7 @@ img{
   display: inline-block;
   font-size: 18px;
   margin: 20px;
-  color: red;
+  color: white;
 }
 
 #Izihlangu{
