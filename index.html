@@ -20,18 +20,19 @@
 
         <div class="Allselections">
 
-  <Select id="Izihlangu">
+            <Select id="Izihlangu">
           <script id="SelectShoes" type="text/x-handlebars-some-template">
+            <option value="SelectColor">SelectColor</option>
             {{#each shoes}}
             <option value="{{color}}">{{color}}</option>
             {{/each}}
-            <option value="allShoes">allShoes</option>
     </script>
   </Select>
 
 
-  <Select id="wear">
+            <Select id="wear">
           <script id="Selectsize" type="text/x-handlebars-some-template">
+            <option value="SelectSize">SelectSize</option>
         {{#each shoes}}
        <option value="{{Size}}">{{Size}}</option>
        {{/each}}
@@ -45,12 +46,12 @@
         </div>
 
         <p id="buttons">
-        <input type="text" id="Txtcolor" placeholder="Enter Color">
-        <input type="text" id="Txtsize" placeholder="Enter Size">
-        <input type="text" id="Txtin-stock" placeholder="Enter Stock">
-        <input type="text" id="Txtprice" placeholder="Enter Price">
-        <input type="text" id="Txtimage" placeholder="Add Image">
-      </p>
+            <input type="text" id="Txtcolor" placeholder="Enter Color">
+            <input type="text" id="Txtsize" placeholder="Enter Size">
+            <input type="text" id="Txtin-stock" placeholder="Enter Stock">
+            <input type="text" id="Txtprice" placeholder="Enter Price">
+            <input type="text" id="Txtimage" placeholder="Add Image">
+        </p>
 
         <div id="display">
         </div>
@@ -63,11 +64,11 @@
         {{#each shoes}}
 
         <div class="shoe">
-          <img src="{{image}}">
-          <p>Price: {{price}}</p>
-          <p>Color: {{color}}</p>
-          <p>In-stock: {{in_stock}}</p>
-          <p>Size: {{Size}}</p>
+            <img src="{{image}}">
+            <p>Price: {{price}}</p>
+            <p>Color: {{color}}</p>
+            <p>In-stock: {{in_stock}}</p>
+            <p>Size: {{Size}}</p>
         </div>
         {{/each}}
     </script>

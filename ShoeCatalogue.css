@@ -1,70 +1,72 @@
-.Container{
-  background-image: url("thisonebackground.png");
-  height: 1000px;
-
-}
-.myheading{
-  color: White;
-  background-color: red;
-  font-size: 50px;
-  text-align: center;
+.Container {
+    background-image: url("thisonebackground.png");
+    height: 1000px;
 }
 
-#Allselections{
-display: inline-table;
+.myheading {
+    color: White;
+    background-color: red;
+    font-size: 50px;
+    text-align: center;
 }
 
-img{
-  border-radius: 8px;
-   width:350px;
-   height:210px;
+#Allselections {
+    display: inline-table;
 }
+
+img {
+    border-radius: 8px;
+    width: 350px;
+    height: 210px;
+}
+
 .shoe {
-  display: inline-block;
-  font-size: 18px;
-  margin: 20px;
-  color: white;
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px;
+    color: white;
 }
 
-#Izihlangu{
-  font-size: 20px;
-  width: 150px;
-  height:30px;
-  border-radius: 8px;
-  background-color:Yellow;
-}
-
-#wear{
-  font-size: 20px;
+#Izihlangu {
+    font-size: 20px;
     width: 150px;
-      height:30px;
-      border-radius: 8px;
-      background-color:Yellow;
+    height: 30px;
+    border-radius: 8px;
+    background-color: Yellow;
 }
 
-#clickSearch{
-  font-size: 20px;
-  width: 150px;
-    height:30px;
+#wear {
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
     border-radius: 8px;
-    background-color:Yellow;
+    background-color: Yellow;
 }
 
-#othersize{
-  font-size: 20px;
-  width: 150px;
-    height:30px;
+#clickSearch {
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
     border-radius: 8px;
-    background-color:Yellow;
+    background-color: Yellow;
 }
 
-#addstock{
-  font-size: 20px;
-  width: 150px;
-    height:30px;
+#othersize {
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
     border-radius: 8px;
-    background-color:Yellow;}
+    background-color: Yellow;
+}
 
-    #buttons{
-      display: list-item;
-    }
+#addstock {
+    font-size: 20px;
+    width: 150px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: Yellow;
+}
+
+#buttons {
+    display: list-item;
+}
