@@ -7,19 +7,31 @@ var ladyWear= document.getElementById('ladyshoe');
 var took= document.getElementById('clickSearch');
 var dropdown= document.getElementById('SelectShoes');
 var Sizedropdown= document.getElementById('Selectsize');
+var addingStock= document.getElementById('addstock');
+var InputColor= document.getElementById('Txtcolor');
+var inputSize= document.getElementById('Txtsize');
+var inputestock= document.getElementById('Txtin-stock');
+var inputePrice= document.getElementById('Txtprice');
+var inputeImage= document.getElementById('Txtimage');
+
+
 
 
 
 //Compiling my tamplate
 var myTampleInfor = Handlebars.compile(tamplate.innerHTML);
 var shoes = [
-    {formal : 'formalShoe', price : 900, Size : 7, color : 'Brown', in_stock : 5, image : 'formal.jpg'},
-    {Snaekers  : 'runningShoe', price : 1500, Size : 5, color : 'white', in_stock : 7, image : 'nike.jpg'},
-    {Stars  : 'allstarTakkie', price : 1400, Size : 4, color: 'Red', in_stock : 4, image : "allstar.jpg"},
-    {themazon  : 'workShoe', price : 500, Size : 6.5, color: 'maroon', in_stock : 3, image : 'amazon.jpg'},
-    {themazon  : 'all', price : 400, Size : 9,color: 'Blue', in_stock : 4, image : 'picback.jpg'},
+    {Type : 'formalShoe', price : 900, Size : 8, color : 'Brown', in_stock : 5, image : 'formal.jpg'},
+    {Type  : 'runningShoe', price : 1500, Size : 5, color : 'white', in_stock : 7, image : 'nike.jpg'},
+    {Type : 'allstarTakkie', price : 1400, Size : 4, color: 'Red', in_stock : 4, image : "allstar.jpg"},
+    {Type  : 'workShoe', price : 10000, Size : 6, color: 'maroon', in_stock : 3, image : 'amazon.jpg'},
+    {Type  : 'all', price : 800, Size : 9,color: 'Blue', in_stock : 5, image : 'JJjoe.jpg'},
+    {Type  : 'sleepons', price : 1200, Size : 3,color: 'Dackblue', in_stock : 4, image : 'sleepon.jpg'},
   ];
 
+addingStock.addEventListener("click", function(){
+  console.log('Anele')
+});
   //compiling color dropdown
   var colors = Handlebars.compile(dropdown.innerHTML);
   //for (var i = 0; i < shoes.length; i++) {

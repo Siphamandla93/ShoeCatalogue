@@ -50,14 +50,6 @@ img{
     background-color:Yellow;
 }
 
-#ladyShoe{
-  font-size: 20px;
-  width: 150px;
-    height:30px;
-    border-radius: 8px;
-    background-color:Yellow;
-}
-
 #othersize{
   font-size: 20px;
   width: 150px;
@@ -66,7 +58,7 @@ img{
     background-color:Yellow;
 }
 
-#ADDREG{
+#addstock{
   font-size: 20px;
   width: 150px;
     height:30px;
@@ -74,5 +66,5 @@ img{
     background-color:Yellow;}
 
     #buttons{
-      display: list:
+      display: list-item;
     }
