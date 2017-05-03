@@ -70,17 +70,27 @@ var shoes = [{
     },
 ];
 
-addingStock.addEventListener("click", function() {
-    console.log('Anele')
-});
+
 //compiling color dropdown
 var colors = Handlebars.compile(dropdown.innerHTML);
-//for (var i = 0; i < shoes.length; i++) {
-// console.log(shoes[i].color);
 thisone.innerHTML = colors({
     shoes: shoes
 });
-//}
+addingStock.addEventListener("click", function() {
+  shoes.push({
+    color: InputColor.value,
+    Price: inputePrice.value,
+    Instock: inputestock.value,
+    Size: inputSize.value,
+    image: inputeImage.value.substring(12),
+
+  });
+  thisone.innerHTML = colors({
+      shoes: shoes
+  });
+
+});
+
 
 //compiling size dropdown
 var thisSize = Handlebars.compile(Sizedropdown.innerHTML);
