@@ -23,8 +23,8 @@
             <Select id="Izihlangu">
           <script id="SelectShoes" type="text/x-handlebars-some-template">
             <option value="SelectColor">SelectColor</option>
-            {{#each shoes}}
-            <option value="{{color}}">{{color}}</option>
+            {{#each colors}}
+            <option value="{{ this }}">{{ this }}</option>
             {{/each}}
               <option value="allShoes">allShoes</option>
     </script>

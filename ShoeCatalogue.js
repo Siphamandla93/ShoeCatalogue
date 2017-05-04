@@ -70,11 +70,23 @@ var shoes = [{
     },
 ];
 
+function uniqueColors(shoes){
+  var shoeMap = {};
+  var colors = [];
+  for (var i = 0; i < shoes.length; i++) {
+    var color = shoes[i].color;
+    if(shoeMap[color] === undefined){
+      shoeMap[color]=color;
+      colors.push(color);
+    }
+  }
+  return colors;
+}
 
 //compiling color dropdown
 var colors = Handlebars.compile(dropdown.innerHTML);
 thisone.innerHTML = colors({
-    shoes: shoes
+    colors: uniqueColors(shoes)
 });
 addingStock.addEventListener("click", function() {
   shoes.push({
@@ -86,7 +98,7 @@ addingStock.addEventListener("click", function() {
 
   });
   thisone.innerHTML = colors({
-      shoes: shoes
+    colors: uniqueColors(shoes)
   });
 
 });
