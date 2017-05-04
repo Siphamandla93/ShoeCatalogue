@@ -1,6 +1,5 @@
-.Container {
+body{
     background-image: url("thisonebackground.png");
-    height: 1000px;
 }
 
 .myheading {
