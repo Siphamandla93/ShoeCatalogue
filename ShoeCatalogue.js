@@ -22,50 +22,50 @@ var inputeImage = document.getElementById('Txtimage');
 var myTampleInfor = Handlebars.compile(tamplate.innerHTML);
 var shoes = [{
         Type: 'formalShoe',
-        price: 900,
+        Price: 900,
         Size: 8,
         color: 'Brown',
-        in_stock: 5,
+        Instock: 5,
         image: 'formal.jpg'
     },
     {
         Type: 'runningShoe',
-        price: 1500,
+        Price: 1500,
         Size: 5,
         color: 'white',
-        in_stock: 7,
+        Instock: 7,
         image: 'nike.jpg'
     },
     {
         Type: 'allstarTakkie',
-        price: 1400,
+        Price: 1400,
         Size: 4,
         color: 'Red',
-        in_stock: 4,
+        Instock: 4,
         image: "allstar.jpg"
     },
     {
         Type: 'workShoe',
-        price: 10000,
+        Price: 10000,
         Size: 6,
         color: 'maroon',
-        in_stock: 3,
+        Instock: 3,
         image: 'amazon.jpg'
     },
     {
         Type: 'all',
-        price: 800,
+        Price: 800,
         Size: 9,
         color: 'Blue',
-        in_stock: 5,
+        Instock: 5,
         image: 'JJjoe.jpg'
     },
     {
         Type: 'sleepons',
-        price: 1200,
+        Price: 1200,
         Size: 3,
         color: 'Dackblue',
-        in_stock: 4,
+        Instock: 4,
         image: 'sleepon.jpg'
     },
 ];
@@ -97,6 +97,12 @@ addingStock.addEventListener("click", function() {
     image: inputeImage.value.substring(12),
 
   });
+
+InputColor.value = '';
+inputePrice.value = '';
+inputestock.value = '';
+inputSize.value = '';
+
   thisone.innerHTML = colors({
     colors: uniqueColors(shoes)
   });
